@@ -1,0 +1,63 @@
+/*-----------------------------------------------
+   Base
+----------------------------------------------*/
+
+html {
+  height: 100%;
+}
+
+body { font-size: 1.6em; }
+
+a {
+  color: #b1d600;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+a:active, a:hover { color: #b1d600; }
+
+a:visited { color: #79c300; }
+
+/*-----------------------------------------------
+   Main
+----------------------------------------------*/
+
+.wrapper {
+  padding: 5em 0 0;
+  margin: 0 auto;
+}
+
+header img {
+  border-radius: 50%;
+  margin: 0 0 1em 5em;
+}
+
+#opening-line:before {
+  color: #b1d600;
+  content: open-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.3em;
+}
+
+header .name { color: #b1d600; }
+
+.social p { display: inline; }
+.social ul li {
+  display: inline-block;
+  margin-right: 0.2em;
+ }
+.social ul li a { font-size: 2em; }
+
+/*-----------------------------------------------
+   Media Queries
+-----------------------------------------------*/
+
+@media screen and (max-width: 650px){
+  header img {
+     display: block;
+     margin: 0 auto;
+     margin-bottom: 1em;
+  }
+}
