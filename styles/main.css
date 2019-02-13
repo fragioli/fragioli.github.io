@@ -51,13 +51,7 @@ header .name { color: #b1d600; }
 .social ul li a { font-size: 2em; }
 
 
-/* Google Maps API */
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
-}
-
+#mapid { height: 180px; }
 /*-----------------------------------------------
    Media Queries
 -----------------------------------------------*/

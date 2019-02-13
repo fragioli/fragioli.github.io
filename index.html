@@ -14,6 +14,14 @@
 
     <link rel="stylesheet" href="styles/main.css" />
 
+    <!-- MAP -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""></script>
+
     <meta name="theme-color" content="#b1d600" />
   </head>
   <body>
@@ -37,23 +45,19 @@
             <li><a href="https://twitter.com/msfragioli/" title="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-        <hr class="divider" />
-        <div id="map"></div>
-        <script>
-          function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 4,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANAFVH8y9CH0wqqaXHVr2Ma6XeQTYmXag&callback=initMap"
-        async defer></script>
+        <!--
+         <div id="mapid"></div>
+         <script>
+         var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox.streets',
+          accessToken: 'your.mapbox.access.token'
+      }).addTo(mymap);
+    </script>-->
+         <p>Questo è un esempio.</p>
+         <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=9.387409687042238%2C45.849679269279605%2C9.393256902694704%2C45.85260117390077&amp;layer=mapnik&amp;marker=45.85114024077794%2C9.39033329486847" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=45.85114&amp;mlon=9.39033#map=18/45.85114/9.39033">Visualizza mappa ingrandita</a></small>
       </div>
     </div>
   </body>
