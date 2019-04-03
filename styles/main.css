@@ -2,11 +2,14 @@
    Base
 ----------------------------------------------*/
 
-html {
+html, body {
   height: 100%;
 }
 
-body { font-size: 1.6em; }
+body {
+  font-size: 1.6em;
+  line-height: 1.5;
+}
 
 a {
   color: #b1d600;
@@ -27,11 +30,6 @@ a:visited { color: #79c300; }
   margin: 0 auto;
 }
 
-header img {
-  border-radius: 50%;
-  margin: 0 0 2em 5em;
-}
-
 #opening-line:before {
   color: #b1d600;
   content: open-quote;
@@ -50,17 +48,10 @@ header .name { color: #b1d600; }
  }
 .social ul li a { font-size: 2em; }
 
-
-#mapid { height: 180px; }
 /*-----------------------------------------------
    Media Queries
 -----------------------------------------------*/
 
 @media screen and (max-width: 650px){
   .wrapper { padding: 2em 0 0; }
-  header img {
-     display: block;
-     margin: 0 auto;
-     margin-bottom: 1em;
-  }
 }
